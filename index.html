@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneakers! Tienda de Zapatillas</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <div class="anuncio">
@@ -13,42 +15,81 @@
     </div>
  <header>
     <!--El logo lo hice yo, no es de ninguna store o eso creo-->
-    <img src="imgs/Logo mio.png" alt="Logo" width="500px">
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">INICIO</a>
-            </li>
-            <li>
-                <a href="html/productos.html">PRODUCTOS</a>
-            </li>
-            <li>
-                <a href="html/nosotros.html">NOSOTROS</a>
-            </li>
-            <li>
-                <a href="html/contacto.html">CONTACTO</a>
-            </li>
-            <li>
-                <a href="html/suscribirse.html">SUSCRIBIRSE</a>
-            </li>
-        </ul>
-    </nav>
-    <div><img src="imgs/Menu hamburguesa.png" alt="Menu"></div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="/imgs/Logo mio.png" alt="logo de la empresa">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">INCIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/productos.html">PRODUCTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/html/nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/html/contacto.html">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/html/suscribirse.html">SUSCRIBIRSE</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
  </header>
 <main>
-    <h1>SNEAKERS STORE</h1>
+    <h1>SNEAKERS <span>STORE</span></h1>
     
     <div>
         <h2>New Style</h2>
     </div>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nulla impedit perspiciatis dolore laboriosam, blanditiis ea aperiam incidunt necessitatibus eius animi. Reprehenderit perspiciatis recusandae nobis temporibus possimus, quos ab doloremque.</p>
+    <section class="carrusel">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/imgs/ZAPATILLAS.jpg" class="d-block w-100" alt="Zapatilla1">
+              </div>
+              <div class="carousel-item">
+                <img src="/imgs/ZAPATILLAS 2.jpg" class="d-block w-100" alt="Zapatilla2">
+              </div>
+              <div class="carousel-item">
+                <img src="/imgs/ZAPATILLAS 3.jpg" class="d-block w-100" alt="Zapatilla3">
+              </div>
+              <div class="carousel-item">
+                <img src="/imgs/ZAPATILLAS 4.jpg" class="d-block w-100" alt="Zapatilla4">
+              </div>
+              <div class="carousel-item">
+                <img src="/imgs/ZAPATILLAS 5.jpg" class="d-block w-100" alt="Zapatilla5">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
 </main>   
     
     <footer>
         Primeros Pasos! 
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>
