@@ -1,0 +1,24 @@
+//reset
+@import "base/reset";
+
+//layout
+@import "layout/header";
+@import "layout/main";
+@import "layout/suscripcion";
+@import "layout/contacto";
+@import "layout/quienes-somos";
+@import "layout/footer";
+
+//mis fonts
+@import "components/fonts";
+
+//components
+@import "components/carrusel";
+@import "components/cards";
+
+//media queries
+@import "media-queries/media-992";
+@import "media-queries/media-768";
+@import "media-queries/media-cards";
+@import "media-queries/media-contacto";
+

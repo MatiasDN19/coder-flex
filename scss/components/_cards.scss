@@ -1,0 +1,52 @@
+//link variables
+@import "../utilities/variables";
+
+// Card Styles
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 25px;
+    row-gap: 25px;
+  
+    img {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .grid-item-01 {
+      grid-column: 2 / 3;
+      grid-row: 1;         
+    }
+  
+    .grid-item-02 {
+      grid-column: 3 / 4;  
+      grid-row: 1;         
+    }
+  
+    .grid-item-03 {
+      grid-column: 2 / 3;
+      grid-row: 2;
+    }
+  
+    .grid-item-04 {
+      grid-column: 3 / 4;
+      grid-row: 2;         
+    }
+  
+    .grid-item-01, .grid-item-02, .grid-item-03, .grid-item-04 {
+      a {
+        display: block; // Necesario para centrar el enlace
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: $secondary-color;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 0 auto; // Centra el enlace horizontalmente
+        width: fit-content; // Ajusta el ancho del enlace al contenido
+      }
+    }
+  }

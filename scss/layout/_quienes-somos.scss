@@ -1,0 +1,27 @@
+//link variables
+@import "../utilities/variables";
+
+//quienes somos
+
+.tienda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 50%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .quienes-somos {
+    background-color: aliceblue;
+    font-family: montserrat;
+    font-size: 16px;
+    text-align: justify;
+    margin: 30px;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 7px 13px 37px $secondary-color;
+  }
