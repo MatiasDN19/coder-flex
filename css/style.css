@@ -136,11 +136,15 @@ main .search-container .search-buttom:hover {
   background-color: #000000;
 }
 main .destacados {
+  background-color: white;
   text-align: center;
-  padding-top: 100px;
+  margin-top: 100px;
+  padding: 10px;
+  border-radius: 20px;
   font-size: 30px;
+  box-shadow: 7px 13px 37px #000000;
   font-family: rockwell;
-  text-decoration: underline;
+  text-decoration: none;
 }
 main .texto {
   font-size: 25px;
@@ -323,7 +327,7 @@ form > button:hover {
 }
 
 .quienes-somos {
-  background-color: aliceblue;
+  background-color: white;
   font-family: montserrat;
   font-size: 16px;
   text-align: justify;
@@ -389,11 +393,11 @@ form > button:hover {
 
 @font-face {
   font-family: rockwell;
-  src: url(./Fonts/Rockwell-ExtraBold.otf);
+  src: url(../Fonts/Rockwell-ExtraBold.otf);
 }
 @font-face {
   font-family: montserrat;
-  src: url(/fonts/Montserrat-SemiBold.ttf);
+  src: url(../fonts/Montserrat-SemiBold.ttf);
 }
 .carrusel {
   display: flex;
